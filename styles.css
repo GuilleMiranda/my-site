@@ -1,0 +1,24 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #fffdf7;
+}
+
+section{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    align-items: center;
+}
+
+.decorator {
+    height: 5px;
+    border: 0px;
+    background-color: #ffee03;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+}
