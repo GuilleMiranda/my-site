@@ -1,4 +1,8 @@
 * {
+    box-sizing: border-box;
+}
+
+html {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -6,7 +10,7 @@ body {
     background-color: #fffdf7;
 }
 
-section{
+section {
     display: flex;
     margin: auto;
     width: 50%;
