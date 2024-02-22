@@ -10,19 +10,46 @@ body {
     background-color: #fffdf7;
 }
 
-section {
+main {
     display: flex;
-    margin: auto;
-    width: 50%;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    text-align: center;
 }
 
 .decorator {
     height: 5px;
     border: 0px;
+    margin-bottom: 6px;
     background-color: #ffee03;
 }
 
-.title {
-    font-family: 'Raleway', sans-serif;
+.column {
+    width: 100%;
+}
+
+.profile-pic-holder {
+    height: 350px;
+    max-width: 650px;
+    background: #fffdf7;
+    text-align: center;
+}
+
+.profile-pic-thumb {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    border-radius: 50%;
+    background-image: url(../images/profile-pic.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 600px) {
+    .column {
+        width: 33.3%;
+    }
 }
