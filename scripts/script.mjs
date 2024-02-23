@@ -1,4 +1,4 @@
-import {i18n} from "./i18n.mjs";
+import { i18n } from "./i18n.mjs";
 
 const supportedLanguages = ["es", "en", "pt"];
 const userPreferredLanguage = navigator.language.slice(0, 2);
@@ -9,8 +9,6 @@ if (supportedLanguages.includes(userPreferredLanguage)) {
 } else {
     language = "en";
 }
-
-console.log("deployed with mjs")
 
 let title = document.getElementById("title");
 let description = document.getElementById("description");
