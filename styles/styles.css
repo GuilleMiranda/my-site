@@ -1,5 +1,5 @@
 :root {
-    --column-count: 3;
+    --column-count: 1;
     --column-width: 100vw;
 }
 
@@ -33,7 +33,6 @@ article {
 }
 
 [class*="col-"] {
-    align-items: center;
     width: var(--column-width);
 }
 
@@ -42,6 +41,7 @@ article {
     max-width: 450px;
     background: #fffdf7;
     text-align: center;
+    margin: auto;
 }
 
 .profile-pic-thumb {
@@ -55,26 +55,19 @@ article {
 }
 
 @media (min-width: 640px) {
+    [class*="col-"] {
+        height: 100vh;
+        width: calc(var(--column-width) / var(--column-count));
+    }
+
     .profile-pic-holder {
         height: 350px;
         max-width: 650px;
-        background: #fffdf7;
-        text-align: center;
     }
 
     .profile-pic-thumb {
         width: 350px;
         height: 350px;
-        display: inline-block;
-        border-radius: 50%;
-        background-image: url(../images/profile-pic.jpeg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    [class*="col-"] {
-        height: 100vh;
-        width: calc(0.3 * var(--column-width));
     }
 }
 
