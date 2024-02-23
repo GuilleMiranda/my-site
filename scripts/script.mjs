@@ -10,6 +10,8 @@ if (supportedLanguages.includes(userPreferredLanguage)) {
     language = "en";
 }
 
+console.log("deployed with mjs")
+
 let title = document.getElementById("title");
 let description = document.getElementById("description");
 
