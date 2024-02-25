@@ -25,6 +25,11 @@ article {
     text-align: center;
 }
 
+#dog {
+    max-width: 100%;
+    height: auto;
+}
+
 .decorator {
     height: 5px;
     border: 0px;
