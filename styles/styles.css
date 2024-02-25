@@ -56,7 +56,6 @@ article {
 
 @media (min-width: 640px) {
     [class*="col-"] {
-        height: 100vh;
         width: calc(var(--column-width) / var(--column-count));
     }
 
